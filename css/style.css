@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li { list-style:none;}
+
+.todo {
+  background: #dcdde1;
+}
+
+.todo h2 {
+  color: #fff;
+  background: #273c75;
+  position: relative;
+}
+
+.todo h2:before{
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top-color: #273c75;
+  border-width: 14px;
+  margin-left: -7px;
+}
+
+form { margin: 50px auto; }
+
+
+.btn-primary:hover {
+  background: #82ccdd !important;  
+}
+
+.btn-primary:focus {
+  box-shadow: none !important;
+}
+
+
+.result {
+  margin: 50px auto;
+}
+
+.result>ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 5px 10px;
+}
+
+.delBtn {
+  font-size: 13px;
+  background: #000;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.delBtn:before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f1f8';
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 900;
+  vertical-align: top;
+  text-indent: 0px;
+  color: #e55039;
+}
+
+@media only screen and (max-width: 540px) {
+  .result>ul {
+    flex-direction: column;
+    flex:1;
+  }
+}
